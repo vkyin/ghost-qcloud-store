@@ -1,21 +1,21 @@
 {
-  "name": "ghost-tencentyun-storage",
-  "version": "1.0.0",
-  "description": "ghost storage module for tencentyun cos",
+  "name": "ghost-qcloud-store",
+  "version": "0.0.1",
+  "description": "ghost storage adaptor for tencent cloud cos",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vkyin/ghost-tencentyun-storage.git"
+    "url": "git+https://github.com/vkyin/ghost-qcloud-store.git"
   },
   "author": "vkyin",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/vkyin/ghost-tencentyun-storage/issues"
+    "url": "https://github.com/vkyin/ghost-qcloud-store/issues"
   },
-  "homepage": "https://github.com/vkyin/ghost-tencentyun-storage#readme",
+  "homepage": "https://github.com/vkyin/ghost-qcloud-store#readme",
   "dependencies": {
     "bluebird": "^3.5.1",
     "cos-nodejs-sdk-v5": "^2.2.2",
