@@ -1,0 +1,24 @@
+{
+  "name": "ghost-tencentyun-storage",
+  "version": "1.0.0",
+  "description": "ghost storage module for tencentyun cos",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vkyin/ghost-tencentyun-storage.git"
+  },
+  "author": "vkyin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vkyin/ghost-tencentyun-storage/issues"
+  },
+  "homepage": "https://github.com/vkyin/ghost-tencentyun-storage#readme",
+  "dependencies": {
+    "bluebird": "^3.5.1",
+    "cos-nodejs-sdk-v5": "^2.2.2",
+    "ghost-storage-base": "0.0.1"
+  }
+}
