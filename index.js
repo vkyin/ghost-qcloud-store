@@ -67,14 +67,15 @@ class TencentyunCOSAdapter extends BaseAdapter {
                     Region: config.Region,
                     Key: filename,
                     ContentLength: state.size,
+                    ContentType: image.mimetype,
                     Body: fs.createReadStream(image.path)
                 }
                 this.cos.putObject(params, function (err, data) {
-                    debug('putObject err is', err)
-                    debug('putObject data is', data)
                     if (err) {
+                        debug('putObject err is', err)
                         reject(false)
                     } else {
+                        debug('putObject data is', data)
                         resolve(config.accessDomain + filename)
                     }
                 })
