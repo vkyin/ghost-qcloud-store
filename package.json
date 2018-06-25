@@ -1,6 +1,6 @@
 {
   "name": "ghost-qcloud-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "ghost storage adaptor for tencent cloud cos",
   "main": "index.js",
   "scripts": {
@@ -20,5 +20,8 @@
     "bluebird": "^3.5.1",
     "cos-nodejs-sdk-v5": "^2.2.2",
     "ghost-storage-base": "0.0.1"
+  },
+  "devDependencies": {
+    "standard": "^11.0.1"
   }
 }
