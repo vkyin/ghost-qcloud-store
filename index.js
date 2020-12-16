@@ -54,6 +54,7 @@ class TencentyunCOSAdapter extends BaseAdapter {
     }
     const res = await util.promisify(this.cos.putObject).call(this.cos, params)
     debug('save', res)
+    // todo: change to STATIC_IMAGE_URL_PREFIX
     return '/content/images' + uniqueFileName
   }
 
