@@ -10,7 +10,6 @@ class TencentyunCOSAdapter extends BaseAdapter {
   constructor ({
     SecretId,
     SecretKey,
-    accessDomain,
     baseDir = '/',
     Bucket,
     Region
@@ -18,7 +17,6 @@ class TencentyunCOSAdapter extends BaseAdapter {
     super()
     assert(SecretId)
     assert(SecretKey)
-    assert(accessDomain)
     assert(Bucket)
     assert(Region)
     this.cosParam = { Bucket, Region }
