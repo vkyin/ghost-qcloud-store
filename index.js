@@ -11,8 +11,7 @@ class TencentyunCOSAdapter extends BaseAdapter {
     SecretId,
     SecretKey,
     accessDomain,
-    filePrefix = '/',
-    baseDir = '/content/images',
+    baseDir = '/',
     Bucket,
     Region
   }) {
@@ -45,16 +44,13 @@ class TencentyunCOSAdapter extends BaseAdapter {
 
   async save (image, targetDir) {
     debug('save image is', image, 'targetDir is', targetDir)
-    const fileState = fs.statSync(image.path)
-    const { Bucket, Region } = this.config
     targetDir = targetDir || this.getTargetDir(this.baseDir)
     const uniqueFileName = await this.getUniqueFileName(image, targetDir)
     debug('save getUniqueFileName result is ', uniqueFileName)
     const params = {
-      Bucket,
-      Region,
+      ...this.cosParam,
       Key: uniqueFileName,
-      ContentLength: fileState.size,
+      ContentLength: image.size,
       ContentType: image.type,
       Body: fs.createReadStream(image.path)
     }
@@ -71,7 +67,7 @@ class TencentyunCOSAdapter extends BaseAdapter {
     return (req, res, next) => {
       this.cos.getObject({
         ...this.cosParam,
-        Key: req.path,
+        Key: path.join(this.baseDir, req.path).replace(/\\/g, '/'),
         Output: res
       }, function (err) {
         if (err) {
