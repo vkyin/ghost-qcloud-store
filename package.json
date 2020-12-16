@@ -17,11 +17,12 @@
   },
   "homepage": "https://github.com/vkyin/ghost-qcloud-store#readme",
   "dependencies": {
-    "bluebird": "^3.5.1",
-    "cos-nodejs-sdk-v5": "^2.2.2",
-    "ghost-storage-base": "0.0.1"
+    "cos-nodejs-sdk-v5": "^2.8.3",
+    "debug": "^4.3.1",
+    "ghost-storage-base": "0.0.5"
   },
   "devDependencies": {
-    "standard": "^11.0.1"
+    "ava": "^3.14.0",
+    "standard": "^16.0.3"
   }
 }
