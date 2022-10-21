@@ -1,6 +1,6 @@
 {
   "name": "ghost-qcloud-store",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "description": "ghost storage adaptor for tencent cloud cos",
   "main": "index.js",
   "scripts": {
@@ -17,12 +17,11 @@
   },
   "homepage": "https://github.com/vkyin/ghost-qcloud-store#readme",
   "dependencies": {
-    "cos-nodejs-sdk-v5": "^2.8.3",
+    "cos-nodejs-sdk-v5": "^2.11.13",
     "debug": "^4.3.1",
-    "ghost-storage-base": "0.0.5"
+    "ghost-storage-base": "^1.0.0"
   },
   "devDependencies": {
-    "ava": "^3.14.0",
     "standard": "^16.0.3"
   }
 }
