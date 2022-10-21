@@ -1,4 +1,4 @@
-const BaseAdapter = require('ghost-storage-base')
+const BaseAdapter = require('./BaseStorage')
 const COS = require('cos-nodejs-sdk-v5')
 const assert = require('assert')
 const fs = require('fs')
